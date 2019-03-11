@@ -19,14 +19,12 @@ namespace Task2
             if (expectedSum != actualSum)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Неправильный ответ!!!");
-                Console.WriteLine("Результат операции: {0}", actualSum);
+                Console.WriteLine("Неправильный ответ!!! Результат операции: {0}", actualSum);
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Правильный ответ!");
-                Console.WriteLine("Результат операции: {0}", actualSum);
+                Console.WriteLine("Правильный ответ! Результат операции: {0}", actualSum);
             }
         }
 

@@ -23,7 +23,6 @@ namespace Task4
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Неправильный ответ!!!");
-                Console.WriteLine("Результат операции: {0}", actualSum);
                 Console.ForegroundColor = ConsoleColor.White;
                 if (expectedSum < actualSum)
                 {
@@ -37,8 +36,7 @@ namespace Task4
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Правильный ответ!");
-                Console.WriteLine("Результат операции: {0}", actualSum);
+                Console.WriteLine("Правильный ответ! Результат операции: {0}", actualSum);
             }
         }
 
