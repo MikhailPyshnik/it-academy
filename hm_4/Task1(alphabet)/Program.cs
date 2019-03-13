@@ -18,11 +18,9 @@ namespace Task1_alphabet_
             {
                 letter = System.Convert.ToChar(i);
                 Console.WriteLine("Всего 26 букв. Буквой № " +n + "  является " + letter);
-                //mass[n] = ch;
                 n--; 
             }
             Console.ReadLine();
-            //Console.WriteLine("Всего 26 букв. Буквой № " + n  "является " + letter);
         }
     }
 }
