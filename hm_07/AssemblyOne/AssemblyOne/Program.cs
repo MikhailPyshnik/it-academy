@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AssemblyOne;
 
 namespace AssemblyOne
 {
@@ -10,6 +11,15 @@ namespace AssemblyOne
     {
         static void Main(string[] args)
         {
+
         }
+
+         class Developer : Employee
+        {
+
+        }
+
     }
+    
 }
+
