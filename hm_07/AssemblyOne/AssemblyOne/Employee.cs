@@ -12,13 +12,13 @@ namespace AssemblyOne
 
         public const int TimeEndtWork = 17;
 
-       // private const string CompanyNamePrivate = "Private";
+        private const string CompanyNamePrivate = "Private";
         
-       // protected const string CompanyNameProtected = "Protected";
+        protected const string CompanyNameProtected = "Protected";
 
-      //  internal const string CompanyNameInternal = "Internal";
+       internal const string CompanyNameInternal = "Internal";
 
-      //  protected internal const string CompanyNameProtectedInternal = "ProtectedIternal";
+        protected internal const string CompanyNameProtectedInternal = "ProtectedIternal";
 
         //private protected const string CompanyNamePrivateProtected = "PrivateProtected ";
     }
