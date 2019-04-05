@@ -21,5 +21,7 @@ namespace AssemblyOne
         protected internal const string CompanyNameProtectedInternal = "ProtectedIternal";
 
         //private protected const string CompanyNamePrivateProtected = "PrivateProtected ";
+
+       
     }
 }
