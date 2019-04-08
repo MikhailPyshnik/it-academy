@@ -8,10 +8,10 @@ namespace Simulator
 {
     class CheckIn
     {
-        public int HourAviaTimeDeparture;
-        public bool AvailabilityPassport;
-        public bool elRegistration;
-        public bool elRegistrationTicket;
+        public int HourAviaTimeDeparture { get; set; }
+        public bool AvailabilityPassport { get; set; }
+        public bool ElRegistration { get; set; }
+        public bool ElRegistrationTicket { get; set; }
         public CheckIn()
         {
 
@@ -27,8 +27,8 @@ namespace Simulator
         {
             HourAviaTimeDeparture = aHourAviaTimeDeparture;
             AvailabilityPassport = aAvailabilityPassport;
-            elRegistration = aelRegistration;
-            elRegistrationTicket = aelRegistrationTicket;
+            ElRegistration = aelRegistration;
+            ElRegistrationTicket = aelRegistrationTicket;
 
         }
 

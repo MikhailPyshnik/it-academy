@@ -8,8 +8,8 @@ namespace Simulator
 {
     class PassportControll
     {
-        public bool Visa;
-        public int PasspotrData;
+        public bool Visa { get; set; }
+        public int PasspotrData { get; set; }
 
         public PassportControll()
         {

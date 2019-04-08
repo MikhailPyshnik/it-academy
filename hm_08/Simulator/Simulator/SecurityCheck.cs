@@ -8,13 +8,13 @@ namespace Simulator
 {
     class SecurityCheck
     {
-        public int Weight;
-        public bool LowCoast;
-        public bool Dangerous;
+        public int Weight { get; set; }
+        public bool LowCoast { get; set; }
+        public bool Dangerous { get; set; }
         public readonly int WeightBaggage = 23;
         public readonly int WeightBaggageLowCost = 10;
         const int WaterMax = 100;
-        public int Water;
+        public int Water { get; set; }
 
 
         public SecurityCheck()
