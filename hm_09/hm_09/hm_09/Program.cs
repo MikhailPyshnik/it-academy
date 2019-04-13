@@ -31,7 +31,7 @@ namespace hm_09
 
             string json = JsonConvert.SerializeObject(song.GetSongData(song));
 
-            Console.WriteLine(song.GetSongData(song));
+           // Console.WriteLine(song.GetSongData(song));
 
             Console.WriteLine(json);
 
