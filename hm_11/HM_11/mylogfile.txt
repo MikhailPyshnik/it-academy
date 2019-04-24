@@ -1,0 +1,9 @@
+2019-04-24 15:49:57,924 [HM_11.Program] INFO  - Starts Application.
+2019-04-24 15:49:57,935 [HM_11.Program] INFO  - Get all motorcycles:
+2019-04-24 15:49:57,935 [HM_11.Program] INFO  - ID: 1; Name Honda; Model Varadero; Year 2007; Odometer 41500.
+2019-04-24 15:49:57,937 [HM_11.Program] INFO  - ID: 2; Name Minsk; Model D4; Year 2018; Odometer 0.
+2019-04-24 15:49:57,937 [HM_11.Program] INFO  - ID: 3; Name Yamaha; Model V-Max; Year 2000; Odometer 52500.
+2019-04-24 15:49:57,937 [HM_11.Program] INFO  - ID: 4; Name Kawasaki; Model ZZR; Year 1995; Odometer 24000.
+2019-04-24 15:49:57,939 [HM_11.Program] INFO  - Cnahge name ID: 1; Name BMW; Model Varadero; Year 2007; Odometer 41500.
+2019-04-24 15:49:57,940 [HM_11.Program] INFO  - GetMotorcycleByID = 3 : ID: 3; Name Yamaha; Model V-Max; Year 2000; Odometer 52500.
+2019-04-24 15:49:57,940 [HM_11.Program] INFO  - Delete moto3: ID: 3; Name Yamaha; Model V-Max; Year 2000; Odometer 52500.
