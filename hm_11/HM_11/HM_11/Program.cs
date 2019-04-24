@@ -1,15 +1,24 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace HM_11
 {
     class Program
     {
+        public static readonly ILog log = LogManager.GetLogger(typeof(Program));
+
         static void Main(string[] args)
         {
+            log4net.Config.DOMConfigurator.Configure();
+
+            log.Info("Starts Application.");
+
             IRepository repository = new MotocycleRepository();
 
             Motorcycle Moto1 = new Motorcycle(1, "Honda", "Varadero", 2007, 41500);
@@ -28,30 +37,52 @@ namespace HM_11
 
             repository.CreateMotorcycle(Moto4);
 
-            Console.WriteLine("Print GetMotorcycles info:");
+            log.Info("Get all motorcycles:");
+
+            List<Motorcycle> allMotorcycles = repository.GetMotorcycles();
+
+            foreach (var motorcycle in allMotorcycles)
+            {
+                log.Info(motorcycle);
+            }
+
+            ColorMessagePrint("Print GetMotorcycles info:");
 
             repository.GetMotorcycles().ForEach(Console.WriteLine);
 
-            Console.WriteLine("Update Moto1 - Name: BMW");
+            ColorMessagePrint("Update Moto1 - Name: BMW");
 
             Moto1.Name = "BMW";
 
             repository.UpdateMotorcycle(Moto1);
 
+            log.Info($"Cnahge name {Moto1}");
+
             repository.GetMotorcycles().ForEach(Console.WriteLine);
 
-            Console.WriteLine("GetMotorcycleByID = 2");
+            ColorMessagePrint("GetMotorcycleByID = 3");
 
-            Console.WriteLine(repository.GetMotorcycleByID(2));
+            Console.WriteLine(repository.GetMotorcycleByID(3));
 
-            Console.WriteLine("Deleted Moto3");
+            log.Info($"GetMotorcycleByID = 3 : {Moto3}");
+
+            ColorMessagePrint("Deleted Moto3");
 
             repository.DeleteMotorcycle(Moto3);
+
+            log.Info($"Delete moto3: {Moto3}");
 
             repository.GetMotorcycles().ForEach(Console.WriteLine);
 
             Console.ReadLine();
+        }
 
+        static void ColorMessagePrint(string str)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n{0,50}", str);
+            Console.ResetColor();
+            Console.WriteLine();
         }
     }
 }

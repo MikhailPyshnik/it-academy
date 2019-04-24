@@ -1,13 +1,19 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using log4net.Config;
+
 
 namespace HM_11
 {
      class MotocycleRepository : IRepository 
     {
+        public static readonly ILog log = LogManager.GetLogger(typeof(MotocycleRepository));
+
         static List<Motorcycle> motorcycles = new List<Motorcycle>();
 
         public void CreateMotorcycle(Motorcycle moto)
@@ -22,7 +28,7 @@ namespace HM_11
 
         public Motorcycle GetMotorcycleByID(int Id)
         {
-            Motorcycle result = motorcycles.ElementAt(0);
+            Motorcycle result = null;
 
             foreach (var moto in motorcycles)
             {
@@ -30,6 +36,10 @@ namespace HM_11
                 {
                     result = moto;
                 }
+            }
+            if (result == null)
+            {
+                log.Error("Alarm!!!Parameter Id is not valid");
             }
             return result;
         }
