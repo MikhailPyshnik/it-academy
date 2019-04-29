@@ -45,7 +45,7 @@ namespace Stack_manual
                 st.ShowArray();
                 Console.ForegroundColor = ConsoleColor.Green;
                 var peek = st.Peek();
-                Console.WriteLine($"Peek metod execution: {peek}");
+                Console.WriteLine($"Peek method execution: {peek}");
                 Console.ResetColor();
                 Console.WriteLine();
 
@@ -55,7 +55,7 @@ namespace Stack_manual
                 //pop = st.Pop();
 
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Pop metod execution: {pop}");
+                Console.WriteLine($"Pop method execution: {pop}");
                 Console.ResetColor();
                 Console.WriteLine();
 
@@ -94,14 +94,14 @@ namespace Stack_manual
                 stackGeneric.ShowArray();
                 Console.ForegroundColor = ConsoleColor.Green;
                 var stackPeek = stackGeneric.Peek();
-                Console.WriteLine($"Peek metod execution: {stackPeek}.");
+                Console.WriteLine($"Peek method execution: {stackPeek}.");
                 Console.WriteLine();
 
                 var stackPop = stackGeneric.Pop();
                 //stackPop = stackGeneric.Pop();
                 //stackPop = stackGeneric.Pop();
 
-                Console.WriteLine($"Pop metod execution: {stackPop}.");
+                Console.WriteLine($"Pop method execution: {stackPop}.");
 
 
                 Console.WriteLine("Show the stack: ");
