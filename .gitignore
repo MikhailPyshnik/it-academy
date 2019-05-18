@@ -4,6 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 hm_09/hm_09/packages/Newtonsoft.Json.12.0.1/
+hw_10/hm_10/packages/log4net.2.0.8/
 
 
 # User-specific files
